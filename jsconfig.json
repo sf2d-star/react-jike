@@ -1,0 +1,10 @@
+
+{
+  "compilerOptions": {
+    "baseUrl": ".",          // 相对路径的基础目录
+    "paths": {
+      "@/*": ["src/*"]       // 把 @ 映射到 src 目录
+    }
+  },
+  "include": ["src"]
+}

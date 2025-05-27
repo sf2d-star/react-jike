@@ -16,7 +16,7 @@ const Login = () => {
     //1. 跳转到首页
     navigate('/')
     //2. 提示一下用户
-    message.success('登陆成功')
+    message.success('Login successfully')
   }
   return (
     <div className="login">
@@ -30,28 +30,28 @@ const Login = () => {
             rules={[
               {
                 required: true,
-                message: '请输入手机号'
+                message: 'Please enter mobile phone number'
               },
               {
                 pattern:/^1[3-9]\d{9}$/,
-                message: '请输入正确的手机号格式'
+                message: 'Please enter appropriate format of phone number'
               }
             ]}>
-            <Input size="large" placeholder="请输入手机号" />
+            <Input size="large" placeholder="Please enter mobile phone number" />
           </Form.Item>
           <Form.Item
           name='code'
             rules={[
               {
                 required: true,
-                message: '请输入验证码'
+                message: 'Please enter verification code'
               }
             ]}>
-            <Input size="large" placeholder="请输入验证码" />
+            <Input size="large" placeholder="Please enter verification code" />
           </Form.Item>
           <Form.Item>
             <Button type="primary" htmlType="submit" size="large" block>
-              登录
+              Login
             </Button>
           </Form.Item>
         </Form>

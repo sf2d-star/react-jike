@@ -1,7 +1,7 @@
-import { Button } from 'antd-mobile'
+
 
 function App() {
-  return <div>This is an app.<Button type='primary'>test</Button></div>
+  return <div>This is an app.</div>
 }
 
 export default App
